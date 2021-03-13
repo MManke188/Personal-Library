@@ -19,6 +19,7 @@
 }
 
 #deleteAllBooks {
+  color: black;
 }
 
 body {
@@ -46,6 +47,9 @@ input {
 
 /* Submit New Book */
 #newBookForm {
+  background-color: sienna;
+  border: 2px solid saddlebrown;
+  text-align: center;
 }
 
 #bookTitleToAdd {
@@ -53,6 +57,7 @@ input {
 }
 
 #newBook {
+  color: aliceblue;
 
 }
 /* End */
@@ -60,6 +65,7 @@ input {
 
 /* All books */
 #display {
+  border: 10px solid beige;
 }
 
 /* End */
@@ -67,11 +73,14 @@ input {
 
 /* Detail */
 #bookDetail {
+  color: aliceblue;
 }
 
 #detailTitle {
+  color: antiquewhite;
 }
 
 #detailComments {
+  color: antiquewhite;
 }
 /* End */

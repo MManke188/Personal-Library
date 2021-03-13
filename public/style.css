@@ -4,20 +4,31 @@
   margin: 10px;
 }
 
+#backgroundImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 20%;
+  z-index: -1;
+}
+
 #sampleui {
   max-width: 450px;
   margin-left: 5%;
+  height: fit-content;
+}
+
+#deleteAllBooks {
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
-#sampleposting {
-  max-width: 450px;
+h1 {
   text-align: center;
-  margin-left: 5%;
-}
-
-#userstories {
-  margin-left: 5%;
 }
 
 form {
@@ -32,3 +43,35 @@ label {
 input {
   margin-bottom: 5px;
 }
+
+/* Submit New Book */
+#newBookForm {
+}
+
+#bookTitleToAdd {
+  width: 295px;
+}
+
+#newBook {
+
+}
+/* End */
+
+
+/* All books */
+#display {
+}
+
+/* End */
+
+
+/* Detail */
+#bookDetail {
+}
+
+#detailTitle {
+}
+
+#detailComments {
+}
+/* End */

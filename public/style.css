@@ -13,23 +13,39 @@
 }
 
 #sampleui {
-  max-width: 450px;
-  margin-left: 5%;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 50px;
+  margin: auto;
+}
+
+#books {
   height: fit-content;
+}
+
+#bookDetail {
+  background-color: antiquewhite;
+  padding: 20px;
 }
 
 #deleteAllBooks {
   color: black;
+  height: fit-content;
+  width: fit-content;
+  background-color: crimson;
+  position: relative;
+
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 
 h1 {
   text-align: center;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
 form {
@@ -50,6 +66,8 @@ input {
   background-color: sienna;
   border: 2px solid saddlebrown;
   text-align: center;
+  height: fit-content;
+  font-family: 'Playfair Display', serif;
 }
 
 #bookTitleToAdd {
@@ -57,30 +75,49 @@ input {
 }
 
 #newBook {
-  color: aliceblue;
-
+  background-color: bisque;
 }
 /* End */
 
 
 /* All books */
 #display {
-  border: 10px solid beige;
+  background-color: beige;
+  border: 3px ridge peru;
+  border-radius: 3px;
+  font-family: 'Playfair Display', serif;
 }
 
 /* End */
 
 
 /* Detail */
-#bookDetail {
-  color: aliceblue;
-}
 
 #detailTitle {
-  color: antiquewhite;
+  color: brown;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
 }
 
 #detailComments {
-  color: antiquewhite;
+  color: rgb(192, 154, 105);
+  font-family: 'Tangerine', cursive;
+  font-size: 35px;
+}
+
+#commentToAdd {
+  font-family: "Tangerine", cursive;
+  font-size: 25px;
+}
+
+.addComment {
+  font-family: "Tangerine", cursive;
+  font-size: 25px;
+}
+
+.deleteBook {
+  font-family: "Tangerine", cursive;
+  font-size: 25px;
 }
 /* End */

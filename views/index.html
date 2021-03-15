@@ -12,6 +12,8 @@
       background-color: whitesmoke;
     }
   </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Tangerine&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,17 +24,19 @@
   </header>
   <br>
   <div id='sampleui'>
-    <form id="newBookForm">
-      <label for="bookTitleToAdd">New Book Title</label>
-      <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick">
-      <button type="submit" value="Submit" id="newBook">Submit New Book!</button>
-    </form>
-    <div id='display'></div>
+    <div id="books">
+      <form id="newBookForm">
+        <label for="bookTitleToAdd">New Book Title</label>
+        <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick" style="font-family: 'Playfair Display', serif;">
+        <button type="submit" value="Submit" id="newBook" style="font-family: 'Playfair Display', serif;">Submit New Book!</button>
+      </form>
+      <div id='display'></div>
+      <button id='deleteAllBooks' style="font-family: 'Playfair Display', serif;">Delete all books...</button>
+    </div>
     <div id='bookDetail' class='border'>
       <p id='detailTitle'>Select a book to see it's details and comments</p>
       <ol id='detailComments'></ol>
     </div>
-    <button id='deleteAllBooks'>Delete all books...</button>
   </div>
 
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"

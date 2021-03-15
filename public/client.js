@@ -20,7 +20,7 @@ $( document ).ready(function() {
   
   let  comments = [];
   $('#display').on('click','li.bookItem',function() {
-    $("#detailTitle").html('<b>'+itemsRaw[this.id].title+'</b> (id: '+itemsRaw[this.id]._id+')');
+    $("#detailTitle").html('<b>'+itemsRaw[this.id].title+'</b>');
     $.getJSON('/api/books/'+itemsRaw[this.id]._id, function(data) {
       comments = [];
       $.each(data.comments, function(i, val) {
@@ -39,7 +39,7 @@ $( document ).ready(function() {
       type: 'delete',
       success: function(data) {
         //update list
-        $('#detailComments').html('<p style="color: red;">'+data+'<p><p>Refresh the page</p>');
+        $('#detailComments').html('<p>'+data+'<p><p>Refresh the page</p>');
       }
     });
   });  

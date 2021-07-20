@@ -6,29 +6,30 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/public/style.css">
+  <link rel="stylesheet" href="../public/style.css">
   <style>
     code {
       background-color: whitesmoke;
     }
   </style>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Tangerine&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Tangerine&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <img id="backgroundImg"
     src="https://www.welt.de/img/kultur/literarischewelt/mobile154566383/0762505247-ci102l-w1024/DW-Ku-kommentar-Google-Books-8.jpg"></img>
-  <header>
-    <h1>Personal Library</h1>
-  </header>
+  <h1>Personal Library</h1>
   <br>
   <div id='sampleui'>
     <div id="books">
       <form id="newBookForm">
         <label for="bookTitleToAdd">New Book Title</label>
-        <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick" style="font-family: 'Playfair Display', serif;">
-        <button type="submit" value="Submit" id="newBook" style="font-family: 'Playfair Display', serif;">Submit New Book!</button>
+        <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick"
+          style="font-family: 'Playfair Display', serif;">
+        <button type="submit" value="Submit" id="newBook" style="font-family: 'Playfair Display', serif;">Submit New
+          Book!</button>
       </form>
       <div id='display'></div>
       <button id='deleteAllBooks' style="font-family: 'Playfair Display', serif;">Delete all books...</button>

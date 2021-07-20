@@ -5,11 +5,15 @@
 }
 
 #backgroundImg {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
-  opacity: 20%;
+  opacity: 60%;
   z-index: -1;
+}
+
+body {
+  margin: 0px !important;
 }
 
 #sampleui {
@@ -35,17 +39,15 @@
   width: fit-content;
   background-color: crimson;
   position: relative;
-
-}
-
-body {
-  height: 100%;
 }
 
 h1 {
   text-align: center;
   padding: 20px;
   font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: rgb(70, 25, 20);
+  -webkit-text-stroke: 1px rgb(100, 0, 0);
 }
 
 form {
